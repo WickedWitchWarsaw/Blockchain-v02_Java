@@ -4,7 +4,7 @@ import java.security.MessageDigest;
 
 public class SHA256Helper {
 
-    public static String hash(String toHash){
+    public static String generateHash(String toHash){
 
         try{
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
