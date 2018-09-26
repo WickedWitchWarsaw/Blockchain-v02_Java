@@ -1,4 +1,4 @@
-package com.wickedwitch;
+package com.wickedwitch.blockchain;
 
 import java.security.MessageDigest;
 

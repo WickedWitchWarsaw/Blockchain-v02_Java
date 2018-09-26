@@ -1,4 +1,4 @@
-package com.wickedwitch;
+package com.wickedwitch.blockchain;
 
 import java.util.Date;
 
@@ -20,9 +20,10 @@ public class Block {
         generateHash();
     }
 
-    private void generateHash() {
+    public void generateHash() {
         String dataToHash = Integer.toString(id)+Integer.toString(nonce)+Long.toString(timestamp)+previousHash+transaction;
         String hashValue = SHA256Helper.generateHash(dataToHash);
+        this.hash = hashValue;
     }
 
     public String getHash() {
